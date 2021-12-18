@@ -1,0 +1,66 @@
+body {
+    background-color: #F5F7F8;
+}
+* {
+    font-family: "Helvetica-Regular";
+
+}
+.form-control {
+    min-height: 38px;
+    &:focus {
+        box-shadow: none;
+        border-color: $mainColor;
+    }
+    &.error {
+        border-color: #f00;
+    }
+}
+#map {
+    height: 250px;
+    margin-bottom: 10px;
+}
+.generic-btn {
+    width: 100%;
+    border-radius: 2px;
+    background-color: $mainColor;
+    border-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px;
+    &:first-child {
+        margin-bottom: 15px;
+    }
+    &:focus-visible {
+        outline: 0;
+    }
+}
+.error {
+    color: #f00;
+    font-size: 12px;
+}
+.main {
+    margin-bottom: 50px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+} 
+.line-under {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #E0E5EB;
+        bottom: -25px;
+        #{$start}: 0;
+    }
+
+}
+[id^="map"]  {
+  
+}

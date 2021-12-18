@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main-ltr.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                logo
+            </div>
+            <div class="header__dropdowns">
+                <div class="dropdown header__dropdowns__currency">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                     Currency
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item active" href="#">EGP</a></li>
+                      <li><a class="dropdown-item" href="#">US</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown header__dropdowns__language">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                     langauage
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item active" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form class="register-steps" name="registration">
+                        <div class="register-steps__header">
+                           <div class="register-steps__header__item header-item active">
+                               <span>Informations</span>
+                           </div>
+                           <div class="register-steps__header__item header-item">
+                             <span>Shipping</span>
+                           </div>
+                           <div class="register-steps__header__item header-item">
+                              <span>Payment</span>
+                            </div>
+                        </div>
+                        <div class="register-steps__content">
+                            <div class="step-one tab">
+                                <div class="step-one__header">
+                                    <h4>Contact info</h4>
+                                    <div class="step-one__header__login">
+                                        Have account? 
+                                        <a href="#"  rel="noopener noreferrer">Login</a>
+                                    </div>
+                                </div>
+                                <div class="row contact-info">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contectPhoneInput" class="form-label">Contact Phone</label>
+                                            <input type="number" required name="contactPhone" class="form-control" id="contectPhoneInput" >
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="nameInput" class="form-label">Name</label>
+                                            <input type="text" required name="name" class="form-control" id="nameInput" >
+                                          </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="step-one__address">
+                                    <div class="step-one__address__header">
+                                        <h4>Shipping Address</h4>
+                                        <button type="button" class="add-new-address-btn">Add New Address</button>
+                                    </div>
+                                    <div class="step-one__add-address">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                              <div class="form-group">
+                                                <label for="nameAddressInput" class="form-label">Name</label>
+                                                <input type="text" name="name" class="form-control" id="nameAddressInput" >
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="addressInput" class="form-label">Address</label>
+                                                <input type="text" name="address" class="form-control" id="addressInput" >
+                                              </div>
+                                              <button class="generic-btn" type="button">Save</button>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div id="map"></div>
+                                                <button class="generic-btn" type="button"  id="locationBtn">Get Current Location</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Select From Your Saved Addresses</p>
+                                    <div class="step-one__address__saved">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item step-one__address__saved__item">
+                                            
+                                             <button class="accordion-button accordion-header" id="headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Jemy Larson
+                                            </button>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <span class="street">Unit 2 Green</span>
+                                                    <span class="city">Halifax</span>
+                                                    <span class="governorate">Hx1 SQN</span>
+                                                    <span class="telephone">Tel: 013015621548</span>
+                                                    <button type="button">Edit Address</button>
+                                                </div>
+                                                <div id="mapAddress"></div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item step-one__address__saved__item">
+                                              <h5 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Jemy Larson
+                                                </button>
+                                              </h5>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="form-check step-one__ship-gift">
+                                        <input class="form-check-input" type="checkbox" value="" id="step-one__ship-gift">
+                                        <label class="form-check-label" for="step-one__ship-gift">
+                                          Ship The Order As A Gift
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="step-two tab">
+                                step-two
+                            </div>
+                            <div class="step-three tab">
+                                step-three
+                            </div>
+                        </div>
+                        <div class="register-steps__btns">
+                            <!-- <button class="">save and continue</button>
+                            <button></button> -->
+                            <button type="button" class="generic-btn" id="nextBtn">Save and Continue</button>
+                            <!-- <button type="button" class="generic-btn" id="prevBtn">Previous</button> -->
+                        </div>
+                
+                    </form>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="order-details">
+                        <div class="order-details__header">
+                            <h4>Order summary</h4>
+                            <p>5 products</p>
+                        </div>
+                        <div class="order-items line-under">
+                            <div class="order-details__item">
+                                <div class="row">
+                                    <div class="col-lg-3 first-item">
+                                        <div class="order-details__item__image">
+     
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6  second-item">
+                                        <div class="order-details__item__details">
+                                            <h5>1X Product name product name lorem ipsum</h5>
+                                            <p>Option details</p>
+                                         </div>
+                                     </div>
+                                     <div class="col-lg-3">
+                                         <div class="order-details__item__price">
+                                           <span>EGP:Price</span>
+                                          </div>
+                                      </div>
+                                </div>
+     
+     
+                            </div>
+                            <div class="order-details__item">
+                             <div class="row">
+                                 <div class="col-lg-3 first-item">
+                                     <div class="order-details__item__image">
+     
+                                     </div>
+                                 </div>
+                                 <div class="col-lg-6 second-item">
+                                     <div class="order-details__item__details">
+                                         <h5>1X Product name product name lorem ipsum</h5>
+                                         <p>Option details</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="order-details__item__price">
+                                        <span>EGP:Price</span>
+                                       </div>
+                                   </div>
+                             </div>
+     
+     
+                            </div>
+
+                        </div>
+                    
+                       <div class="order-details__prices">
+                           <div class="order-details__prices__subtotal space-between">
+                               <h5>Subtotal</h5>
+                               <p>EGP:Price</p>
+
+                           </div>
+                           <div class="order-details__prices__shipping  space-between">
+                            <h5>Shipping fee</h5>
+                            <p>EGP:Price</p>
+                           </div>
+                       </div>
+                       <div class="order-details__coupons">
+                           <input type="text" placeholder="Coupons">
+                           <button>Apply</button>
+                       </div>
+                       <div class="order-details__point  line-under line-under--point">
+                           <a href="#">Have points?</a>
+                       </div>
+                       <div class="order-details__total-price space-between ">
+                           <span>Total</span>
+                           <span>EGP:Price</span>
+                       </div>
+
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAndFqevHboVWDN156vJqXk1Y1-D7QR7BE&callback=initMap&v=weekly"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeVY5h5uQ4Zq2fGC1qTiHtSsvCfggP0ls&callback=initMap&v=weekly"></script> -->
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeVY5h5uQ4Zq2fGC1qTiHtSsvCfggP0ls&callback=initMap&v=weekly" ></script> -->
+    <script src="./js/steps.js"></script>
+    
+</body>
+</html>
