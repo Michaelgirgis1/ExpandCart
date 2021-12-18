@@ -82,7 +82,7 @@
                     background-color: transparent;
                     border: 0;
                     color: #209DF9;
-                    font-size: 13px;
+                    font-size: 15px;
                     &::before {
                         content:"+";
                         color: #209DF9;
@@ -137,9 +137,9 @@
             .accordion-button {
                 padding: 0;
                 background-color: transparent;
-                font-size: 13px;
+                font-size: 16px;
                 color: #646464;
-                padding: 13px;
+                padding: 22px;
                 padding-#{$start}: 40px;
                 position: relative;
                 transition: all 0.5s ease;
@@ -151,8 +151,8 @@
                     border: 1px solid #ced4da;
                     border-radius: 50%;
                     position: absolute;
-                    #{$start}: 10px;
-                    top: calc(50% - 8.5px);
+                    #{$start}: 9.5px;
+                    top: calc(50% - 9.5px);
                 }
                 &::after {
                     transition: all 0.5s ease;
@@ -166,7 +166,9 @@
                     top: calc(50% - 4px);
                 }
 
-                &:not(.collapsed) {
+                &:not(.collapsed)
+                // &:not(.collapsed) 
+                {
                     box-shadow: unset;
                     width: 50%;
                     &::before {
@@ -174,7 +176,7 @@
                     }
                     &::after {
 
-                    background-color: $mainColor;
+                      background-color: $mainColor;
                     }
 
                 }

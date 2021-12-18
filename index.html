@@ -90,8 +90,20 @@
                                                 <input type="text" name="name" class="form-control" id="nameAddressInput" >
                                               </div>
                                               <div class="form-group">
-                                                <label for="addressInput" class="form-label">Address</label>
-                                                <input type="text" name="address" class="form-control" id="addressInput" >
+                                                <label for="streetInput" class="form-label">street</label>
+                                                <input type="text" name="street" class="form-control" id="streetInput" >
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="cityInput" class="form-label">city</label>
+                                                <input type="text" name="city" class="form-control" id="cityInput" >
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="governorateInput" class="form-label">Governorate</label>
+                                                <input type="text" name="governorate" class="form-control" id="governorateInput" >
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="telephoneInput" class="form-label">Telephone</label>
+                                                <input type="text" name="telephone" class="form-control" id="telephoneInput" >
                                               </div>
                                               <button class="generic-btn" type="button">Save</button>
                                             </div>
@@ -103,13 +115,15 @@
                                     </div>
                                     <p>Select From Your Saved Addresses</p>
                                     <div class="step-one__address__saved">
-                                        <div class="accordion" id="accordionExample">
+                                        <!-- <div class="accordion" id="accordion">
                                             <div class="accordion-item step-one__address__saved__item">
-                                            
-                                             <button class="accordion-button accordion-header" id="headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Jemy Larson
-                                            </button>
-                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <h5 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                        Jemy Larson
+                                                    </button>
+                                                </h5>
+                                 
+                                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
                                                     <span class="street">Unit 2 Green</span>
                                                     <span class="city">Halifax</span>
@@ -132,7 +146,67 @@
                                                 </div>
                                               </div>
                                             </div>
+                                          </div> -->
+
+
+                                          <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item step-one__address__saved__item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Jemy Larson
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">       
+                                                    <span class="street">Unit 2 Green</span>
+                                                    <span class="city">Halifax</span>
+                                                    <span class="governorate">Hx1 SQN</span>
+                                                    <span class="telephone">Tel: 013015621548</span>
+                                                    <button type="button">Edit Address</button>
+                                                </div>
+                                                <div id="mapAddress"></div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item step-one__address__saved__item">
+                                              <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Jemy Larson
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">       
+                                                    <span class="street">Unit 2 Green</span>
+                                                    <span class="city">Halifax</span>
+                                                    <span class="governorate">Hx1 SQN</span>
+                                                    <span class="telephone">Tel: 013015621548</span>
+                                                    <button type="button">Edit Address</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item step-one__address__saved__item">
+                                              <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Jemy Larson
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">       
+                                                    <span class="street">Unit 2 Green</span>
+                                                    <span class="city">Halifax</span>
+                                                    <span class="governorate">Hx1 SQN</span>
+                                                    <span class="telephone">Tel: 013015621548</span>
+                                                    <button type="button">Edit Address</button>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
+
+
+
+
+                                   
+
+
                                     </div>
                                     <div class="form-check step-one__ship-gift">
                                         <input class="form-check-input" type="checkbox" value="" id="step-one__ship-gift">

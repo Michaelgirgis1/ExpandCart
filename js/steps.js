@@ -111,7 +111,8 @@ $(function () {
 
 
     $(".add-new-address-btn").click(function () {
-        debugger
+        // debugger
+        $('.collapse').collapse('hide')
         $(".step-one__add-address").slideToggle();
     });
 
@@ -136,16 +137,16 @@ $(function () {
 
     $("#locationBtn").click(() => {
         // Try HTML5 geolocation.
-        // debugger
+   
+        debugger
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
-                    debugger
                     const pos = {
                         lat: position.coords.latitude,
                         lng: position.coords.longitude,
                     };
-                    codeLatLng(pos.lat, pos.lng)
+                    // codeLatLng(pos.lat, pos.lng)
 
                     infoWindow.setPosition(pos);
                     infoWindow.setContent("Location found.");

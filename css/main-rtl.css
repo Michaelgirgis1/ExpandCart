@@ -250,7 +250,7 @@ body {
   background-color: transparent;
   border: 0;
   color: #209DF9;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* line 86, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
@@ -319,9 +319,9 @@ body {
 .register-steps .register-steps__content .step-one .accordion-button {
   padding: 0;
   background-color: transparent;
-  font-size: 13px;
+  font-size: 16px;
   color: #646464;
-  padding: 13px;
+  padding: 22px;
   padding-right: 40px;
   position: relative;
   transition: all 0.5s ease;
@@ -336,8 +336,8 @@ body {
   border: 1px solid #ced4da;
   border-radius: 50%;
   position: absolute;
-  right: 10px;
-  top: calc(50% - 8.5px);
+  right: 9.5px;
+  top: calc(50% - 9.5px);
 }
 
 /* line 157, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
@@ -359,30 +359,30 @@ body {
   width: 50%;
 }
 
-/* line 172, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 174, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .accordion-button:not(.collapsed)::before {
   border: 2px solid #155EBC;
 }
 
-/* line 175, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 177, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .accordion-button:not(.collapsed)::after {
   background-color: #155EBC;
 }
 
-/* line 182, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 184, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .accordion-button:focus {
   background-color: transparent;
   box-shadow: unset;
 }
 
-/* line 190, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 192, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .accordion-body {
   padding: 0 40px 20px;
   display: flex;
   flex-direction: column;
 }
 
-/* line 194, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 196, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .accordion-body span {
   color: #646464;
   font-size: 15px;
@@ -390,12 +390,12 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 199, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 201, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .accordion-body span:last-of-type {
   margin-bottom: 20px;
 }
 
-/* line 203, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 205, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .accordion-body button {
   max-width: 135px;
   background-color: transparent;
@@ -406,17 +406,17 @@ body {
   color: #209DF9;
 }
 
-/* line 213, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 215, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .collapse.show {
   display: flex;
 }
 
-/* line 215, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 217, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .collapse.show .accordion-body {
   width: 50%;
 }
 
-/* line 218, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
+/* line 220, ../../../Desktop/Expand Cart/scss/Components/_steps.scss */
 .register-steps .register-steps__content .step-one .collapse.show [id^="map"] {
   width: 50%;
   height: 190px;
